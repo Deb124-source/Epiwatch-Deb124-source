@@ -144,6 +144,52 @@ npm run dev
 
 ---
 
+## 🔐 Environment Variables
+
+Create a `.env` file and add:
+
+PORT=5000  
+DATABASE_URL=your_database_url  
+API_KEY=your_api_key  
+JWT_SECRET=your_secret
+
+---
+## 📡 API Endpoints
+
+### GET /api/health
+Returns system status
+
+Response:
+{
+  "status": "ok"
+}
+
+---
+
+### POST /api/login
+Login user
+
+Request:
+{
+  "email": "test@example.com",
+  "password": "123456"
+}
+
+Response:
+{
+  "token": "jwt_token_here"
+}
+
+---
+## 🤝 Contributing
+
+1. Fork the repository  
+2. Create a new branch  
+3. Commit your changes  
+4. Push and create Pull Request
+
+---
+
 ## 🔌 Core API Endpoints
 
 | Method | Endpoint | Description | Model Engine |
